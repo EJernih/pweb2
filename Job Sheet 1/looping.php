@@ -22,23 +22,23 @@
 
     //do..while bilangan prima kurang dari 20
     echo "perulangan do...while bilangan prima kurang dari 20</br></br>";
-    $z = 1;
+    $z=1;
 
     do {
-        $isPrime = true;
+        $prima = true;
     
         if ($z <= 1) {
-            $isPrime = false;
+            $prima = false;
         } else {
             for ($i = 2; $i <= $z / 2; $i++) {
                 if ($z % $i == 0) {
-                    $isPrime = false;
+                    $prima = false;
                     break;
                 }
             }
         }
     
-        if ($isPrime) {
+        if ($prima) {
             echo "Bilangan prima: $z <br>";
         }
     
