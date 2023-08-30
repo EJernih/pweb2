@@ -13,11 +13,21 @@ class manusia{
 //class turunan atau sub class dari turunan manusia
 class mahasiswa extends manusia
 {
+    //properti kelas turunan
     public $nama_mahasiswa;
+    private $nim = "220302055";//mempraktikan enkapsulasi private di properti
 
+    //method kelas turunan
     function panggil_mahasiswa($mahasiswa){
         $this->nama_mahasiswa = $mahasiswa;
     }
+    function panggil_nim(){
+        return "NIM saya ". $this->nim;
+        echo "NIM Saya ". $this->nim;
+
+    }
+
+    
 }
 
 //instansiasi class mahasiswa
@@ -32,4 +42,5 @@ echo "Nama Belakang Saya : ". $informatika->nama_mahasiswa;
 
 //COBA SIMULASIKAN BAGAIMANA MEMANGGIL PRIVATE CLASS DI DALAM KELAS TURUNAN
 //mempraktekan enkapsulasi protected dan private ke dalam kelas pewarisan
+
 ?>

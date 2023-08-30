@@ -25,6 +25,8 @@ $nama_mahasiswa = new mahasiswa();
 //menampilkan ke layar; pasti menggunakan echo
 
 echo $nama_mahasiswa -> tampil_nama();
+echo "<br>";
+
 
 //ini kalo di run masih kosong, karena ga ada return untuk mengembalikan nilainya.
 //jadi kalo mau nampilin nama, isi di method tampil nama.
@@ -34,11 +36,14 @@ echo $nama_mahasiswa -> tampil_nama();
 //dengan property : 1. nidn
 //                  2. nama -> nampilin nama sendiri
 //                  3. prodi
+
+    //membuat class dosen
     class Dosen {
         var $nidn;
         var $nama;
         var $prodi;
-
+        
+        //membuat method 
         function tampil_nama() {
             return "Nama Saya Emaloroes Jernih Arifin";
         }
@@ -47,5 +52,11 @@ echo $nama_mahasiswa -> tampil_nama();
             
         }
     }
+
+    //membuat objek nama dosen
+    $nama_dosen = new dosen();
+
+    //menampilkan ke layar
+    echo $nama_dosen ->tampil_nama();
 
 ?>
